@@ -12,7 +12,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		 <docker.image.prefix>helloworld</docker.image.prefix>
+		 <docker.image.prefix>192.168.3.202</docker.image.prefix>
 	</properties>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
