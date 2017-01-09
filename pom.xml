@@ -12,7 +12,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<docker.image.prefix>192.168.3.202</docker.image.prefix>
+		<docker.image.prefix>http://192.168.3.202:5000/</docker.image.prefix>
 	</properties>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -44,7 +44,7 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.4.13</version>
 				<configuration>
-					<imageName>boothello</imageName>
+					<imageName>${docker.image.prefix}boothello</imageName>
 					<serverId>docker-hub</serverId>
 					<registryUrl>http://192.1268.3.202</registryUrl>
 					<exposes>5000</exposes>
