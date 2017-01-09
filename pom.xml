@@ -44,10 +44,10 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.4.13</version>
 				<configuration>
-					<imageName>boothello</imageName>
-					 <newName>develop01.mycompany.com:5000/boothello</newName>
+					<imageName>192.168.3.202:5000/boothello</imageName>
+					 <newName>192.168.3.202:5000/boothello</newName>
 					<serverId>docker-hub</serverId>
-					<registryUrl>http://192.1268.3.202</registryUrl>
+					<registryUrl>http://192.168.3.202</registryUrl>
 					<exposes>5000</exposes>
 					<dockerDirectory>src/main/docker</dockerDirectory>
 					<resources>
