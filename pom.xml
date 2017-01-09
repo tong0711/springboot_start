@@ -45,7 +45,9 @@
 				<version>0.4.3</version>
 				<configuration>
 					<imageName>boothello</imageName>
-					<registryUrl>http://192.168.3.202:5000/v1/</registryUrl>
+					<serverId>docker-hub</serverId>
+					<registryUrl>http://192.1268.3.202</registryUrl>
+					<exposes>5000</exposes>
 					<dockerDirectory>src/main/docker</dockerDirectory>
 					<resources>
 						<resource>
