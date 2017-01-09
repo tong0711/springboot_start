@@ -45,13 +45,13 @@
 				<version>0.4.13</version>
 				<configuration>
 					<imageName>boothello</imageName>
-
+					<serverId>docker-hub</serverId>
+					<registryUrl>http://192.1268.3.202</registryUrl>
+					<exposes>5000</exposes>
 					<dockerDirectory>src/main/docker</dockerDirectory>
 					<resources>
 						<resource>
-							<serverId>docker-hub</serverId>
-							<registryUrl>http://192.1268.3.202</registryUrl>
-							<exposes>5000</exposes>
+
 							<targetPath>/</targetPath>
 							<directory>${project.build.directory}</directory>
 							<include>${project.build.finalName}.jar</include>
