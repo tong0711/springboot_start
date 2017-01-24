@@ -8,12 +8,12 @@ import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;
 @Controller
 @EnableAutoConfiguration
-public class App  implements EmbeddedServletContainerCustomizer{
+public class App  {
 
     @RequestMapping("/")
     @ResponseBody
     String home() {
-        return "Hello World my frist!";
+        return "Hello World my frist for spring boot!";
     }
 
     public static void main(String[] args) throws Exception {
@@ -21,9 +21,5 @@ public class App  implements EmbeddedServletContainerCustomizer{
         SpringApplication.run(App.class, args);
     }
 
-	public void customize(ConfigurableEmbeddedServletContainer arg0) {
-		arg0.setPort(8081);
-		// TODO Auto-generated method stub
-		
-	}
+
 }
